@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+  <!-- Profile Picture -->
+  <ImageView
+      android:id="@+id/profilePicture"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="24dp"
+      app:srcCompat="@drawable/baseline_person_24" />
+
+  <!-- Email -->
+  <TextView
+      android:id="@+id/profileEmail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/profilePicture"
+      android:layout_marginTop="16dp"
+      android:text="Email: "
+      android:textSize="18sp" />
+
+  <!-- Username -->
+  <TextView
+      android:id="@+id/profileUsername"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/profileEmail"
+      android:layout_marginTop="8dp"
+      android:text="Username: "
+      android:textSize="18sp" />
+
+  <!-- Other TextViews for profile details -->
+  </RelativeLayout>

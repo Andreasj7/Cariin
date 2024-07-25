@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1004736996619",
+    "firebase_url": "https://cariin-42de5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cariin-42de5",
+    "storage_bucket": "cariin-42de5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004736996619:android:6a09971480b19a6248ae0e",
+        "android_client_info": {
+          "package_name": "com.example.cariin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004736996619-dri8qvarbu9dqm04icg5nclihvik2ig3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cariin",
+            "certificate_hash": "4ed4ef32320588283ae525b46f5aeffb394305a8"
+          }
+        },
+        {
+          "client_id": "1004736996619-djevfpdoajd6q680o7tn3phhifbcpepu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy4k1nRjiSpChz6p_c2fGh00QBQM_B9eA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004736996619-djevfpdoajd6q680o7tn3phhifbcpepu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cariin" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#EF945F</item>
+        <item name="colorPrimaryVariant">@color/underline</item>
+        <item name="android:button">@color/orange</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.Cariin" parent="Base.Theme.Cariin" />
+
+    <style name="OrangeOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/orange</item>
+    </style>
+
+
+</resources>
