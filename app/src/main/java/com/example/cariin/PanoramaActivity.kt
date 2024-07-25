@@ -1,5 +1,6 @@
 package com.example.cariin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -64,6 +65,8 @@ class PanoramaActivity : AppCompatActivity() {
                     }
                     tempDB.selectedPanorama = Panorama(panoramas[position], tipeRekreasi)
                     Toast.makeText(this@PanoramaActivity, "Selected: ${tempDB.selectedPanorama?.name}", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@PanoramaActivity, TipeRekreasiActivity::class.java)
+                    startActivity(intent)
                 }
             }
 
