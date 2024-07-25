@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "1004736996619",
-    "firebase_url": "https://cariin-42de5-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "cariin-42de5",
-    "storage_bucket": "cariin-42de5.appspot.com"
+    "project_number": "368474891472",
+    "firebase_url": "https://cariin-ad5b8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cariin-ad5b8",
+    "storage_bucket": "cariin-ad5b8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1004736996619:android:6a09971480b19a6248ae0e",
+        "mobilesdk_app_id": "1:368474891472:android:80d28a61e50f3aac686ad5",
         "android_client_info": {
-          "package_name": "com.example.cariin"
+          "package_name": "com.example.cariinapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1004736996619-dri8qvarbu9dqm04icg5nclihvik2ig3.apps.googleusercontent.com",
+          "client_id": "368474891472-74b7bgd1afjts9meefjrsgq22hk0df58.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.cariin",
-            "certificate_hash": "4ed4ef32320588283ae525b46f5aeffb394305a8"
+            "package_name": "com.example.cariinapp",
+            "certificate_hash": "5586bc438b5204beb3ea178ce278a2fb9e441db5"
           }
         },
         {
-          "client_id": "1004736996619-djevfpdoajd6q680o7tn3phhifbcpepu.apps.googleusercontent.com",
+          "client_id": "368474891472-51jakrifiinbvh20kkdj5qa005qjs8ef.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBy4k1nRjiSpChz6p_c2fGh00QBQM_B9eA"
+          "current_key": "AIzaSyDY9xmywRzBJe28msLbmbCzqIAQOPyHmEs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1004736996619-djevfpdoajd6q680o7tn3phhifbcpepu.apps.googleusercontent.com",
+              "client_id": "368474891472-51jakrifiinbvh20kkdj5qa005qjs8ef.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
