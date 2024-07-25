@@ -1,5 +1,6 @@
 package com.example.cariin
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -49,8 +50,8 @@ class TipeRekreasiActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 //                    tempDB.selectedRekreasi = listTipeRekreasi[position]
-//                    val intent = Intent(this@TipeRekreasiActivity, ResultActivity::class.java)
-//                    startActivity(intent)
+                    val intent = Intent(this@TipeRekreasiActivity, Result_Activity::class.java)
+                    startActivity(intent)
                 }
             }
 

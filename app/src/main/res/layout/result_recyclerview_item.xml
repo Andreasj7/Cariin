@@ -32,9 +32,11 @@
         android:id="@+id/textView4"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="47dp" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/recommendationNameTV" />
 
     <ImageButton
         android:id="@+id/imageButton"
