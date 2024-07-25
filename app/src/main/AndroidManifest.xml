@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Cariin"
         tools:targetApi="31">
         <activity
+            android:name=".TipeRekreasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RekreasiActivity"
+            android:exported="false" />
+        <activity
             android:name=".PanoramaActivity"
             android:exported="false" />
         <activity
@@ -29,7 +35,7 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".StartAppActivity"
             android:exported="false"
