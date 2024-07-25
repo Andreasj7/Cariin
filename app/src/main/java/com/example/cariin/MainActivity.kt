@@ -8,6 +8,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.MenuItem
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var handler : Handler
     private lateinit var adapter: ImageAdapter
     private lateinit var imageList : ArrayList<Int>
-
+    private lateinit var findPlaceBtn : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
         val navView: NavigationView = findViewById(R.id.navigationView)
-
+        findPlaceBtn = findViewById(R.id.findPlaceBtn)
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
@@ -93,6 +94,11 @@ class MainActivity : AppCompatActivity() {
                 ).show()
             }
             true
+        }
+
+        findPlaceBtn.setOnClickListener {
+            val intent = Intent(this, QuestionActivity::class.java)
+            startActivity(intent)
         }
 
         init()
