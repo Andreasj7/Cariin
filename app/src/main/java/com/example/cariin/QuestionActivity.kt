@@ -43,8 +43,8 @@ class QuestionActivity : AppCompatActivity() {
                     isInitialSelection = false
                 } else {
                     tempDB.selectedCity = citiesInBali[position]
-//                    val intent = Intent(this, )
-//                    startActivity(intent)
+                    val intent = Intent(this@QuestionActivity, PanoramaActivity::class.java)
+                    startActivity(intent)
                 }
             }
 
