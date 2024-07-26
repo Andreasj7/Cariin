@@ -1,6 +1,8 @@
 package com.example.cariin
 
 import android.os.Bundle
+import android.view.WindowInsets
+import android.view.WindowInsetsController
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,15 +19,19 @@ class Result_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
 
+        // Menyembunyikan navigation bar
+        window.insetsController?.let {
+            it.hide(WindowInsets.Type.navigationBars())
+            it.systemBarsBehavior = WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        }
+
         recommendationRV = findViewById(R.id.recommendationRV)
         recommendationRV.layoutManager = LinearLayoutManager(this)
 
         val recommendations = listOf(
-            Recommendation("Place 1", "Address 1"),
-            Recommendation("Place 2", "Address 2"),
-            Recommendation("Place 3", "Address 3"),
-            Recommendation("Place 4", "Address 4"),
-            Recommendation("Place 5", "Address 5"),
+            Recommendation("Kuta Beach", "Kuta, Badung Regency, Bali"),
+            Recommendation("Pandawa Beach ", "Bali"),
+            Recommendation("Balangan Beach", "South Kuta, Badung Regency, Bali"),
         )
 
         val adapter = RecommendationAdapter(recommendations)

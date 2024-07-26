@@ -140,11 +140,11 @@ class MainActivity : AppCompatActivity() {
         handler = Handler(Looper.myLooper()!!)
         imageList = ArrayList()
 
-        imageList.add(R.drawable.alone)
-        imageList.add(R.drawable.alone)
-        imageList.add(R.drawable.alone)
-        imageList.add(R.drawable.alone)
-        imageList.add(R.drawable.alone)
+        imageList.add(R.drawable.bali2)
+        imageList.add(R.drawable.bali1)
+        imageList.add(R.drawable.bali3)
+        imageList.add(R.drawable.bali4)
+        imageList.add(R.drawable.bali5)
 
         adapter = ImageAdapter(imageList,viewPager2)
 
