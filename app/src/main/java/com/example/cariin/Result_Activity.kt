@@ -13,25 +13,23 @@ import com.example.cariin.adapter.RecommendationAdapter
 import com.example.cariin.models.Recommendation
 
 class Result_Activity : AppCompatActivity() {
-    private lateinit var recommendationRV:RecyclerView
+    private lateinit var recommendationRV: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
 
-        // Menyembunyikan navigation bar
-        window.insetsController?.let {
-            it.hide(WindowInsets.Type.navigationBars())
-            it.systemBarsBehavior = WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-        }
-
         recommendationRV = findViewById(R.id.recommendationRV)
         recommendationRV.layoutManager = LinearLayoutManager(this)
 
+        // Buat daftar rekomendasi pantai dengan gambar
         val recommendations = listOf(
-            Recommendation("Kuta Beach", "Kuta, Badung Regency, Bali"),
-            Recommendation("Pandawa Beach ", "Bali"),
-            Recommendation("Balangan Beach", "South Kuta, Badung Regency, Bali"),
+            Recommendation("Kuta Beach", "Kuta, Badung Regency, Bali", R.drawable.bali2),
+            Recommendation("Pandawa Beach", "Bali", R.drawable.bali1),
+            Recommendation("Balangan Beach", "South Kuta, Badung Regency, Bali", R.drawable.bali3),
+            Recommendation("Sanur Beach", "Denpasar, Bali", R.drawable.bali4),
+            Recommendation("Seminyak Beach", "Seminyak, Bali", R.drawable.bali5)
         )
 
         val adapter = RecommendationAdapter(recommendations)
